@@ -10,32 +10,15 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     background: #0a0a0a;
-    color: white;
-}
-
-nav {
-    padding: 20px 40px;
-}
-
-nav a {
-    color: #aaa;
-    text-decoration: none;
-}
-
-nav a:hover {
     color: white;
 }
 
 .container {
     max-width: 600px;
     margin: auto;
-    padding: 40px;
-}
-
-h1 {
-    font-size: 40px;
+    padding: 60px;
 }
 
 input, textarea {
@@ -71,27 +54,27 @@ button:hover {
 
 <body>
 
-<nav>
-<a href="index.html">← Volver</a>
-</nav>
-
 <div class="container">
 
 <h1>Contacto</h1>
 
-<p>Envíame un mensaje.</p>
+<p>Envíame un mensaje y te responderé pronto.</p>
 
 <form action="https://formspree.io/f/mdallgvv" method="POST">
 
-<input type="text" placeholder="Tu nombre" required>
+<input type="text" name="nombre" placeholder="Tu nombre" required>
 
-<input type="email" placeholder="Tu email" required>
+<input type="email" name="email" placeholder="Tu email" required>
 
-<textarea placeholder="Tu mensaje" rows="6" required></textarea>
+<textarea name="mensaje" placeholder="Tu mensaje" rows="6" required></textarea>
 
-<button type="submit">Enviar</button>
+<button type="submit">Enviar mensaje</button>
 
 </form>
+
+<br>
+
+<a href="index.html" style="color:#aaa;">← Volver</a>
 
 </div>
 
